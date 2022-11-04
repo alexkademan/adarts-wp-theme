@@ -1,0 +1,6 @@
+
+.testthing {
+	display: block;
+	color: var(--white);
+	background-color: var(--blue);
+}
