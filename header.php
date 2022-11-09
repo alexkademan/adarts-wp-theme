@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<h1 class="hid"><?php echo get_bloginfo('name') ?></h1>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'adarts' ); ?></a>
@@ -41,7 +42,7 @@
 
 
 		<nav id="site-navigation" class="main-navigation">
-			
+			<h1 class="hid">Site Navigation</h1>
 			<?php
 			wp_nav_menu(
 				array(
@@ -50,20 +51,6 @@
 				)
 			);
 			?>
-
-
-			<!-- <div id="primary-menu" class="menu">
-				<ul class="nav-menu">
-					<li class="page_item page-item-2"><a href="http://192.168.0.100/new/aas2022/about/">About</a></li>
-					<li class="page_item page-item-3"><a href="http://192.168.0.100/new/aas2022/packaging/">Packaging</a></li>
-					<li class="page_item page-item-23"><a href="http://192.168.0.100/new/aas2022/print/">Print</a></li>
-					<li class="page_item page-item-25"><a href="http://192.168.0.100/new/aas2022/prepress/">Prepress</a></li>
-					<li class="page_item page-item-27"><a href="http://192.168.0.100/new/aas2022/our-forte/">Our Forte</a></li>
-					<li class="page_item page-item-29"><a href="http://192.168.0.100/new/aas2022/tradeshows/">Tradeshows</a></li>
-					<li class="page_item page-item-31"><a href="http://192.168.0.100/new/aas2022/3d-work/">3D Work</a></li>
-					<li class="page_item page-item-33"><a href="http://192.168.0.100/new/aas2022/contact-us/">Contact Us</a></li>
-				</ul>
-			</div> -->
 
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
