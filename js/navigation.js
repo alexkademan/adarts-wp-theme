@@ -7,6 +7,10 @@
 ( function() {
 	const siteNavigation = document.getElementById( 'site-navigation' );
 	const siteHeader = document.getElementById( 'masthead' );
+	// const belowHeader = document.getElementById( 'below-header' );
+	const navBgLayout = document.getElementById( 'nav-bg-layout' );
+	let siteHeaderHeight = siteHeader.offsetHeight;
+	let resetScroll = false;
 	const bodyElement = document.body;
 	
 	const siteHeaderShader = document.getElementById('site-header-shader');
@@ -16,6 +20,7 @@
 	let pageBackgroundPosition = false;
 	
 	addEventListener('scroll', () => {
+		// console.log(siteHeader.offsetHeight);
 		pageScrollPosition = window.scrollY;
 	});
 
@@ -109,18 +114,28 @@
 	}
 
 	function openMenu() {
-		console.log(window.scrollY);
-		console.log(pageScrollPosition);
-		bodyElement.classList.add('toggled');
+		resetScroll = pageScrollPosition;
+
+		navBgLayout.style.paddingTop = `${siteHeaderHeight}px`;
+		navBgLayout.style.marginTop = `-${resetScroll}px`;
+		window.scrollTo(0, 0);
+		
+		bodyElement.classList.add('nav-toggled');
 		bodyElement.classList.add('site-header-shader-visible');
-		button.setAttribute( 'aria-expanded', 'true' );
+		button.setAttribute('aria-expanded', 'true');
 		menuStatus = true;
 	}
 
 	function closeMenu() {
-		bodyElement.classList.remove( 'toggled' );
+		bodyElement.classList.remove('nav-toggled');
+		navBgLayout.style.removeProperty('padding-top');
+		navBgLayout.style.removeProperty('margin-top');
+		window.scrollTo({
+			top: resetScroll,
+			left: 0
+		});
 		
-		button.setAttribute( 'aria-expanded', 'false' );
+		button.setAttribute('aria-expanded', 'false');
 		menuStatus = false;
 
 		setTimeout(() => {

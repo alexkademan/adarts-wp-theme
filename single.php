@@ -7,6 +7,11 @@
  * @package AdArts
  */
 
+if (get_the_ID() == 36) {
+	echo 'NFL picks go here.';
+	die();
+}
+
 get_header();
 ?>
 

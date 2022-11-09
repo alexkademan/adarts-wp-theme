@@ -70,6 +70,8 @@
 	<div class="site-header-shader">
 		<div id="site-header-shader" class="shade"></div>
 	</div>
+<div id="below-header" class="below-header">
+<div id="nav-bg-layout" class="nav-bg-layout">
 <?php
 
 // $pages = get_pages( array('sort_column' => 'menu_order') );
