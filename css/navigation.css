@@ -1,4 +1,4 @@
-/* @media screen and (max-width: 900px) { */
+@media screen and (max-width: 900px) {
 	.site-header {
 		position: sticky;
 		z-index: 10000;
@@ -10,8 +10,8 @@
 		display: grid;
 		grid-gap: 0;
 		grid-template-areas: 
-		"sandwich logo"
-		"menu menu";
+			"sandwich logo"
+			"menu menu";
 		grid-template-columns: 4.125em 1fr;
 		border-bottom: .2em solid var(--white);
 		/* padding-bottom: .25em; */
@@ -208,4 +208,4 @@
 	.nav-toggled .site-header-shader .shade {
 		opacity: 1;
 	}
-/* } */
+}
