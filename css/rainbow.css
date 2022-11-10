@@ -1,96 +1,71 @@
+
+/* @media screen and (max-width: 900px) { */
 /* https://codepen.io/mattlebel/pen/nappGA */
-.rainbow {
+	.rainbow {
+		/*
+		#ff3232 0%,
+		#fcf528 16%,
+		#28fc28 32%,
+		#28fcf8 50%,
+		#272ef9 66%,
+		#ff28fb 82%,
+		#ff3232 100%
+		*/
 
+		/* W3C */
+		background: linear-gradient(0deg, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
 
-	/*
-	#ff3232 0%,
-	#fcf528 16%,
-	#28fc28 32%,
-	#28fcf8 50%,
-	#272ef9 66%,
-	#ff28fb 82%,
-	#ff3232 100%
-	*/
+		/* Firefox */
+		background: -moz-linear-gradient(0deg, #ff3232 0%, #fcf528 16%, #28fc28 32%, #28fcf8 50%, #272ef9 66%, #ff28fb 82%, #ff3232 100%);
 
-	/* W3C */
-	background: linear-gradient(0deg, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
+		/* Chrome,Safari4+ */
+		background: -webkit-gradient(0deg, left, right, color-stop(0%,#ff3232), color-stop(16%,#fcf528), color-stop(32%,#28fc28), color-stop(50%,#28fcf8), color-stop(66%,#272ef9), color-stop(82%,#ff28fb), color-stop(100%,#ff3232));
 
-	/* Firefox */
-	background: -moz-linear-gradient(0deg, #ff3232 0%, #fcf528 16%, #28fc28 32%, #28fcf8 50%, #272ef9 66%, #ff28fb 82%, #ff3232 100%);
+		/* Chrome10+,Safari5.1+ */
+		background: -webkit-linear-gradient(0deg, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
 
-	/* Chrome,Safari4+ */
-	background: -webkit-gradient(0deg, left, right, color-stop(0%,#ff3232), color-stop(16%,#fcf528), color-stop(32%,#28fc28), color-stop(50%,#28fcf8), color-stop(66%,#272ef9), color-stop(82%,#ff28fb), color-stop(100%,#ff3232));
+		background-size: 1000%;
+		-moz-background-size: 1000%;
+		-webkit-background-size: 1000%;	
 
-	/* Chrome10+,Safari5.1+ */
-	background: -webkit-linear-gradient(0deg, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
+		/* W3C */
+		animation-name: fun-time-awesome;
+		animation-duration: 15s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-play-state: running;
 
-	background-size: 1000%;
-	-moz-background-size: 1000%;
-	-webkit-background-size: 1000%;	
+		/* Firefox: */
+		-moz-animation-name: fun-time-awesome;
+		-moz-animation-duration: 15s;
+		-moz-animation-timing-function: linear;
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-direction: alternate;
+		-moz-animation-play-state: running;
 
-	/* W3C */
-	animation-name: fun-time-awesome;
-	animation-duration: 15s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-play-state: running;
-
-	/* Firefox: */
-	-moz-animation-name: fun-time-awesome;
-	-moz-animation-duration: 15s;
-	-moz-animation-timing-function: linear;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-direction: alternate;
-	-moz-animation-play-state: running;
-
-	/* Chrome, Safari */
-	-webkit-animation-name: fun-time-awesome;
-	-webkit-animation-duration: 15s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-play-state: running;
-}
-
-@keyframes fun-time-awesome {
-	0% {background-position: left;}
-	100% {background-position: right;}
-}
-
-@-moz-keyframes fun-time-awesome {
-	0% {background-position: left;}
-	100% {background-position: right;}
-}
-
-@-webkit-keyframes fun-time-awesome {
-	0% {background-position: left;}
-	100% {background-position: right;}
-}
-
-
-/* mobile phone */
-@media screen and (max-device-width: 480px) {
-	body {
-		height: 120%;
+		/* Chrome, Safari */
+		-webkit-animation-name: fun-time-awesome;
+		-webkit-animation-duration: 15s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-play-state: running;
 	}
-	h1 {
-		font-size: 25px;
+
+	@keyframes fun-time-awesome {
+		0% {background-position: left;}
+		100% {background-position: right;}
 	}
-	h2 {
-		font-size: 12px;
-		top: 50px;
+
+	@-moz-keyframes fun-time-awesome {
+		0% {background-position: left;}
+		100% {background-position: right;}
 	}
-	audio {
-		opacity: 1;
-		bottom: 30px;
-		top: 90px;
-		left: 10px;
+
+	@-webkit-keyframes fun-time-awesome {
+		0% {background-position: left;}
+		100% {background-position: right;}
 	}
-	#crushin {
-		display: none;
-	}
-	#counter {
-		top: 380px;
-	}
-}
+
+/* } */

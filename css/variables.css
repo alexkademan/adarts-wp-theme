@@ -1,7 +1,9 @@
 :root {
-	--blue: #1e90ff;
+	--blue: rgb(0, 174, 239);
 	--white: #fff;
 	--black: #000;
 	--darkGrey: #999;
 	--uglyPink: #FCF;
+	--mainNavHover: rgb(0, 174, 239);
+	--body-copy: rgb(50, 50, 50);
 }

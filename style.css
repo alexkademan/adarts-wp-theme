@@ -25,7 +25,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 @import './css/variables.css';
+
 @import './css/base.css';
+@import './css/base-extra.css';
 @import './css/navigation.css';
+@import './css/navigation-large.css';
 /* @import './css/navigationOld.css'; */
+@import './css/footer.css';
+
 @import './css/rainbow.css';

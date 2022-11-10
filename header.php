@@ -18,6 +18,10 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Questrial&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,14 +48,13 @@
 		<nav id="site-navigation" class="main-navigation">
 			<h1 class="hid">Site Navigation</h1>
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
 			?>
-
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 	<div class="site-header-shader">
@@ -59,22 +62,3 @@
 	</div>
 <div id="below-header" class="below-header">
 <div id="nav-bg-layout" class="nav-bg-layout">
-<?php
-
-// $pages = get_pages( array('sort_column' => 'menu_order') );
-
-// foreach($pages as $key => $page) {
-// 	// print_r($page);
-// 	// echo "<br />";
-// 	print_r($key);
-// 	echo "<br />";
-// 	print_r($page->menu_order);
-// 	echo "<br />";
-// 	print_r($page->post_title);
-// 	echo "<br />";
-// 	print_r($page->guid);
-// 	echo "<br />";
-// 	print_r(get_permalink($page->ID));
-// 	echo "<br />~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br /><br />";
-// }
-
