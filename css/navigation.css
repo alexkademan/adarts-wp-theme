@@ -176,17 +176,19 @@
 
 	/* ****************************************************** */
 	.site-header-shader {
-		position: absolute;
+		position: fixed;
 		z-index: 9999;
 		left: 0;
 		top: 0;
-		width: 100%;
-		height: 100vh;
 		overflow: hidden;
+		width: 0;
+		height: 0;
 	}
 
 	.site-header-shader-visible .site-header-shader {
 		overflow: visible;
+		width: 100%;
+		height: 100vh;
 	}
 
 	.site-header-shader .shade {

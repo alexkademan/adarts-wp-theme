@@ -6,6 +6,18 @@
     color: #CCC;
 }
 
+.site-footer .payment {
+    color: var(--white);
+    color: antiquewhite;
+    font-weight: bold;
+    transition: all 2s solid;
+}
+
+.site-footer .payment:hover {
+    color: var(--white);
+    transition: all 2s solid;
+}
+
 .site-footer a {
     text-decoration: none;
     color: #CCC;
@@ -24,11 +36,13 @@
 .site-footer h2 {
     margin-top: 0;
     margin-bottom: .25em;
+	letter-spacing: .125em;
 }
 
 .site-footer h4 {
     margin-top: 0;
     margin-bottom: 2.5em;
+    letter-spacing: .01em;
 }
 
 .site-footer .copyright {
@@ -44,3 +58,19 @@
     padding: 0 0 2em;
     margin: 0;
 }
+
+.submit-payment {
+    display: block;
+    width: 100%;
+}
+
+.submit-payment .payment {
+    display: block;
+    margin: 0 auto;
+}
+
+/* @media screen and (min-width: 901px) {
+    .site-footer {
+        display: none;
+    }
+} */

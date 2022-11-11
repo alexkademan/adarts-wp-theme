@@ -14,12 +14,12 @@
 	<footer id="colophon" class="site-footer">
 		
 		<div class="site-info page-width">
-			<div class="address">
+			<div class="contact-info">
 				<hgroup>
 					<h2><?php echo get_bloginfo('name') ?></h2>
 					<h4><?php echo get_bloginfo('description') ?></h4>
 				</hgroup>
-				
+
 				<p>
 					4120 North Calhoun Rd. Ste 200<br />
 					Brookfield, Wisconsin 53005
@@ -38,20 +38,25 @@
 					);
 				?>
 			</nav>
+			
+			<div class="submit-payment">
+				<button 
+					type="submit"
+					onclick="window.location.href='https://paylink.paytrace.com?m=eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMTI4R0NNIn0.gjiQaYN36pYKKounMJymDYgUUy7fxGBq.A-ZCqgRGNO8-hSoo.o84B5H5KxQVZzcczZ5TmWteWhCIYdpVRxd1KNnEV123EvfChvMQYzQ0CytoP-RYJdPnsf63ntOQbko7nR8Rivkk0E1tiagK9Q98FbLydgRJExz5sTrvPhTjWY0388Z_7xqxdhIFqXq8D679APFckHtvdhWxBFYv2Olpy4zeP3Iw3BVAhJhTz0aIzEXgPwrIPblOOnp37DzByYqe7cWA19lVK_51ya0WJqH2xCd3qHTOCTgfpubOwd1lrtPL49HRzGDIfGu1W5RR9D4cWGv451EtE5BEDkYuXiR9j9Lg.n5uiICYoCra8y96Z1xyg9w&amp;amount=&amp;invoice='"
+					class="payment"
+				>
+					Submit Payment
+				</button>
+			</div>
 
-			<button 
-				type="submit"
-				onclick="window.location.href='https://paylink.paytrace.com?m=eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMTI4R0NNIn0.gjiQaYN36pYKKounMJymDYgUUy7fxGBq.A-ZCqgRGNO8-hSoo.o84B5H5KxQVZzcczZ5TmWteWhCIYdpVRxd1KNnEV123EvfChvMQYzQ0CytoP-RYJdPnsf63ntOQbko7nR8Rivkk0E1tiagK9Q98FbLydgRJExz5sTrvPhTjWY0388Z_7xqxdhIFqXq8D679APFckHtvdhWxBFYv2Olpy4zeP3Iw3BVAhJhTz0aIzEXgPwrIPblOOnp37DzByYqe7cWA19lVK_51ya0WJqH2xCd3qHTOCTgfpubOwd1lrtPL49HRzGDIfGu1W5RR9D4cWGv451EtE5BEDkYuXiR9j9Lg.n5uiICYoCra8y96Z1xyg9w&amp;amount=&amp;invoice='"
-			>Submit Payment</button>
-
-			style="
+			<!-- style="
 			border: 0px;
 			border-radius: 7px;
 			height: 38px;
 			width: 160px;
 			color: white;
 			font-weight: bold;
-			background-color:#4696CA;
+			background-color:#4696CA; -->
 
 			<?php
 				if(in_array('nfl-picks/nfl.php', apply_filters('active_plugins', get_option('active_plugins')))){ 
