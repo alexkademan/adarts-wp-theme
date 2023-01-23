@@ -22,6 +22,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Questrial&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="<?php echo get_site_url() ?>/favicon.png">
 </head>
 
 <body <?php body_class(); ?>>

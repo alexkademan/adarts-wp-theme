@@ -13,9 +13,19 @@
  */
 
 get_header();
+
+if ( have_posts() ) :
+	if ( is_home() && is_front_page() ) :
+		get_template_part('template-parts/home', 'main');
+	endif;
+endif;
 ?>
 
 	<main id="primary" class="site-main">
+
+		<?php
+		
+		?>
 
 		<?php
 		if ( have_posts() ) :

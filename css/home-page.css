@@ -1,0 +1,21 @@
+.top-bg {
+	display: inline-block;
+	width: 100%;
+	background-color: #f6f8f7;
+	background-image: url('../images/bg/HomePage_BG96.jpg');
+	background-image: url('../images/bg/Packaging_BG96.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.top-bg h1,
+.top-bg h2 {
+	text-align: center;
+	font-family: 'Marcellus';
+}
+
+.top-bg hgroup {
+	display: block;
+	/* background-color: aliceblue; */
+	max-width: 35em;
+}
